@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/ComingUpMain/ComingUpMain.tsx",
+      "label": "ComingUpMain",
+      "routes": [
+        "/*",
+        "/coming-up-u40mainu41"
+      ],
+      "dataModelId": "1:80",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/Assignments/Assignments.tsx",
+      "label": "Assignments",
+      "routes": [
+        "/assignments"
+      ],
+      "dataModelId": "1:68"
+    },
+    {
+      "id": "src/screens/Readings/Readings.tsx",
+      "label": "Readings",
+      "routes": [
+        "/readings"
+      ],
+      "dataModelId": "1:56"
+    },
+    {
+      "id": "src/screens/Courses/Courses.tsx",
+      "label": "Courses",
+      "routes": [
+        "/courses"
+      ],
+      "dataModelId": "1:44"
+    },
+    {
+      "id": "src/screens/Mpdm/Mpdm.tsx",
+      "label": "Mpdm",
+      "routes": [
+        "/mpdm-884"
+      ],
+      "dataModelId": "1:92"
+    }
+  ],
+  "edges": [
+    {
+      "id": "src/screens/Courses/Courses.tsx:84:12-to-src/screens/Mpdm/Mpdm.tsx",
+      "source": "src/screens/Courses/Courses.tsx",
+      "target": "src/screens/Mpdm/Mpdm.tsx",
+      "data": {
+        "viaRoute": "/mpdm-884",
+        "trigger": {
+          "element": "<Link to=\"/mpdm-884\" className=\"block w-full h-full\">\n              <ScrollArea className=\"w-[303px] h-[516px] mx-auto my-[22px]\">\n                {courses.map((course, index) => (\n                  <div key={index} className=\"mb-4\">\n                    <span className=\"text-[#207ef9] [font-family:'Inter',Helvetica] text-base\">\n                      MDPM {course.id}\n                      <br />\n                    </span>\n                    <span className=\"font-bold text-[#010101] [font-family:'Inter',Helvetica] text-base\">\n                      {course.title}\n                      <br />\n                    </span>\n                    <span className=\"text-[#010101] [font-family:'Inter',Helvetica] text-base\">\n                      {course.description}\n                      <br />\n                      <br />\n                    </span>\n                  </div>\n                ))}\n              </ScrollArea>\n            </Link>",
+          "line": 84,
+          "endLine": 104,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/Courses/Courses.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Mpdm/Mpdm.tsx:58:14-to-src/screens/Mpdm/Mpdm.tsx",
+      "source": "src/screens/Mpdm/Mpdm.tsx",
+      "target": "src/screens/Mpdm/Mpdm.tsx",
+      "data": {
+        "viaRoute": "/mpdm-884",
+        "trigger": {
+          "element": "<Link className=\"block w-full h-full\" to=\"/mpdm-884\">\n                <ScrollArea className=\"w-[303px] h-[528px] mx-auto my-[13px]\">\n                  <div className=\"w-[303px] [font-family:'Inter',Helvetica] font-normal\">\n                    <h3 className=\"font-bold text-[#b94242] text-xl mb-2\">\n                      Product Analytics\n                    </h3>\n\n                    <p className=\"text-[#010101] text-base\">\n                      This applied course teaches you how to adeptly collect,\n                      analyze, and report analytics data to make informed\n                      product marketing decisions that have a positive business\n                      impact.\n                    </p>\n\n                    <p className=\"text-[#010101] text-base mt-4\">\n                      With a focus on website analytics and conversion data,\n                      you&apos;ll begin by learning about website analytics data\n                      collection, the major shifts currently disrupting the\n                      industry, and the top techniques to adapt in this\n                      quickly-changing landscape.\n                    </p>\n\n                    <p className=\"text-[#010101] text-base mt-4\">\n                      Next, you&apos;ll dig into the world&apos;s most-used web\n                      analytics platform, Google Analytics, and will get a\n                      high-level overview of how to use Google&apos;s GA4\n                      platform. In GA4, you&apos;ll learn how to extract\n                      meaningful conversion and analytics insights to understand\n                      who your customers are and where the leaks are within your\n                      conversion funnel. You&apos;ll also practice segmenting\n                      analytics data to derive personalized conversion insights\n                      to distinct user cohorts. To get a fuller picture of your\n                      users, and how they convert, you&apos;ll next learn about\n                      the power of heatmapping analytics data. You&apos;ll\n                      receive high-level instruction on how to use Microsoft\n                      Clarity&apos;s heatmapping platform to make conversion\n                      decisions to optimize product marketing impact.\n                    </p>\n\n                    <p className=\"text-[#010101] text-base mt-4\">\n                      Finally, you&apos;ll learn how to assess and summarize\n                      these analytics findings into a comprehensive analytics\n                      report that can be presented to management or\n                      stakeholders. The report will suggest ways to optimize\n                      conversions of your digital product with the goal of\n                      increasing sales in the broader marketplace.\n                    </p>\n                  </div>\n                </ScrollArea>\n              </Link>",
+          "line": 58,
+          "endLine": 107,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/Mpdm/Mpdm.tsx"
+        }
+      }
+    }
+  ]
+}
